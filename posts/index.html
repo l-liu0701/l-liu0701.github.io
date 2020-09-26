@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自动生成测试数据 | My vuePress blog</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.0635fe36.css" as="style"><link rel="preload" href="/assets/js/app.a55f4e38.js" as="script"><link rel="preload" href="/assets/js/2.439d7bca.js" as="script"><link rel="preload" href="/assets/js/8.75e96568.js" as="script"><link rel="prefetch" href="/assets/js/3.971cf89f.js"><link rel="prefetch" href="/assets/js/4.870cc543.js"><link rel="prefetch" href="/assets/js/5.5bc5eaa4.js"><link rel="prefetch" href="/assets/js/6.e416f727.js"><link rel="prefetch" href="/assets/js/7.28fd76f9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0635fe36.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">My vuePress blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/posts/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Posts
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/posts/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Posts
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="自动生成测试数据"><a href="#自动生成测试数据" class="header-anchor">#</a> 自动生成测试数据</h1> <p><strong>本实验使用的RDBMS为MySQL，OS为macOS。</strong></p> <table><thead><tr><th>数据量</th> <th>数据生成方式</th></tr></thead> <tbody><tr><td>小</td> <td>通过INSERT向表中插入数据</td></tr> <tr><td>大</td> <td>在内存表中创建数据，然后一次性插入测试表中<a href="%E5%BD%93**%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E9%87%8F%E5%BA%9E%E5%A4%A7**%E6%97%B6%EF%BC%8CINSERT%E6%8F%92%E5%85%A5%E7%9A%84%E6%95%88%E7%8E%87%E8%BE%83%E4%BD%8E%E3%80%82%E4%BB%A5%60%E5%86%85%E5%AD%98%E8%A1%A8%60%E4%B8%BA%E4%B8%AD%E9%97%B4%E8%A1%A8%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E5%90%8E%EF%BC%8C%E5%86%8D%E5%B0%86%E7%94%9F%E6%88%90%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%80%E6%AC%A1%E6%80%A7%E6%8F%92%E5%85%A5%E6%99%AE%E9%80%9A%E6%95%B0%E6%8D%AE%E8%A1%A8">^1</a></td></tr></tbody></table> <h2 id="_1-内存表"><a href="#_1-内存表" class="header-anchor">#</a> 1. 内存表</h2> <h3 id="_1-1-内存表特征"><a href="#_1-1-内存表特征" class="header-anchor">#</a> 1.1 内存表特征</h3> <p>MySQL的内存表的表结构创建在磁盘上，数据存放在内存中。</p> <table><thead><tr><th>内存表结构/内存表数据</th> <th>存储位置</th> <th>扩展名</th></tr></thead> <tbody><tr><td>表结构</td> <td>磁盘</td> <td>.frm</td></tr> <tr><td>数据</td> <td>内存</td> <td>/</td></tr></tbody></table> <ul><li>MySQL启动时：表结构存在，表数据存在</li> <li>MySQL重启后：表结构存在，表数据消失<a href="%E5%BD%93MySQL%E9%87%8D%E5%90%AF%E6%97%B6%EF%BC%8C%E6%89%80%E5%8D%A0%E7%94%A8%E7%9A%84%E5%86%85%E5%AD%98%E8%A2%AB%E9%87%8A%E6%94%BE%EF%BC%8C%E5%86%85%E5%AD%98%E4%B8%AD%E5%AD%98%E5%82%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E5%90%8C%E6%97%B6%E8%A2%AB%E9%87%8A%E6%94%BE%E6%8E%89%E3%80%82%E6%89%80%E4%BB%A5%E9%87%8D%E5%90%AF%E5%90%8E%EF%BC%8C%E5%8E%9F%E6%9D%A5%E5%AD%98%E5%82%A8%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B6%88%E5%A4%B1">^2</a></li></ul> <h3 id="_1-2-内存表优点"><a href="#_1-2-内存表优点" class="header-anchor">#</a> 1.2 内存表优点</h3> <p>内存表使用哈希散列索引将数据保存在内存中，因此具有极快的速度。</p> <h3 id="_1-3-内存表的使用"><a href="#_1-3-内存表的使用" class="header-anchor">#</a> 1.3 内存表的使用</h3> <p>heap[^4]对所有用户的连接是可见的，这使得它非常适合做缓存。</p> <h3 id="_1-4-创建内存表"><a href="#_1-4-创建内存表" class="header-anchor">#</a> 1.4 创建内存表</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>create table mem_table(
+    id int(10),
+	  num int(10)
+) engine=memory;		-- 创建内存表时需要选择内存模式memory
+</code></pre></div><h3 id="_1-5-例子"><a href="#_1-5-例子" class="header-anchor">#</a> 1.5 例子</h3> <h4 id="_1-5-1-创建内存表"><a href="#_1-5-1-创建内存表" class="header-anchor">#</a> 1.5.1 创建内存表</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>create table user_mem(
+    userid int(11) not null auto_increment,
+    username varchar(50) not null,
+    password varchar(50) not null,
+    primary key (userid)
+) engine=memory auto_increment=1
+</code></pre></div><h4 id="_1-5-2-查看创建结果"><a href="#_1-5-2-查看创建结果" class="header-anchor">#</a> 1.5.2 查看创建结果</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> show tables<span class="token punctuation">;</span>
++----------------+
+<span class="token operator">|</span> Tables_in_test <span class="token operator">|</span>
++----------------+
+<span class="token operator">|</span> user_mem       <span class="token operator">|</span>
++----------------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.01</span> sec<span class="token punctuation">)</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> desc user_mem<span class="token punctuation">;</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token operator">|</span> Field    <span class="token operator">|</span> Type        <span class="token operator">|</span> Null <span class="token operator">|</span> Key <span class="token operator">|</span> Default <span class="token operator">|</span> Extra          <span class="token operator">|</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token operator">|</span> userid   <span class="token operator">|</span> int         <span class="token operator">|</span> NO   <span class="token operator">|</span> PRI <span class="token operator">|</span> NULL    <span class="token operator">|</span> auto_increment <span class="token operator">|</span>
+<span class="token operator">|</span> username <span class="token operator">|</span> varchar<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">|</span> NO   <span class="token operator">|</span>     <span class="token operator">|</span> NULL    <span class="token operator">|</span>                <span class="token operator">|</span>
+<span class="token operator">|</span> password <span class="token operator">|</span> varchar<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">|</span> NO   <span class="token operator">|</span>     <span class="token operator">|</span> NULL    <span class="token operator">|</span>                <span class="token operator">|</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token number">3</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_2-自定义函数"><a href="#_2-自定义函数" class="header-anchor">#</a> 2. 自定义函数</h2> <p>自定义函数的两个必要条件：</p> <ul><li>参数</li> <li>返回值</li></ul> <h3 id="_2-1-创建自定义函数"><a href="#_2-1-创建自定义函数" class="header-anchor">#</a> 2.1 创建自定义函数</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>create function function_name
+returns
+{string|integer|real|decimal}
+routine_body
+</code></pre></div><h4 id="_2-1-1-函数体"><a href="#_2-1-1-函数体" class="header-anchor">#</a> 2.1.1 函数体</h4> <ul><li>函数体由合法的SQL语句构成
+<ul><li>函数体可以是简单的SELECT或INSERT语句</li></ul></li> <li>函数体如果为复合结构则使用BEGIN...END语句
+<ul><li>复合结构可以包含声明、循环、控制结构</li></ul></li></ul> <h3 id="_2-2-在mysql中执行sql文件"><a href="#_2-2-在mysql中执行sql文件" class="header-anchor">#</a> 2.2 在MySQL中执行sql文件</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 在MySQL终端操作环境下
+source [文件路径]
+</code></pre></div><h3 id="_2-3-调用自定义函数"><a href="#_2-3-调用自定义函数" class="header-anchor">#</a> 2.3 调用自定义函数</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 在MySQL终端操作环境下
+select [函数名(参数)]
+</code></pre></div><h3 id="_2-4-例子"><a href="#_2-4-例子" class="header-anchor">#</a> 2.4 例子</h3> <h4 id="_2-4-1-例1"><a href="#_2-4-1-例1" class="header-anchor">#</a> 2.4.1 例1</h4> <h5 id="a-创建数据表"><a href="#a-创建数据表" class="header-anchor">#</a> a. 创建数据表</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>create table user(
+    userid int(11) not null auto_increment,
+    username varchar(50) not null,
+    password varchar(50) not null,
+    primary key (userid)
+) engine=innodb auto_increment=1
+</code></pre></div><h5 id="b-查看创建结果"><a href="#b-查看创建结果" class="header-anchor">#</a> b. 查看创建结果</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> show tables<span class="token punctuation">;</span>
++----------------+
+<span class="token operator">|</span> Tables_in_test <span class="token operator">|</span>
++----------------+
+<span class="token operator">|</span> user           <span class="token operator">|</span>
+<span class="token operator">|</span> user_mem       <span class="token operator">|</span>
++----------------+
+<span class="token number">2</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> desc user<span class="token punctuation">;</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token operator">|</span> Field    <span class="token operator">|</span> Type        <span class="token operator">|</span> Null <span class="token operator">|</span> Key <span class="token operator">|</span> Default <span class="token operator">|</span> Extra          <span class="token operator">|</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token operator">|</span> userid   <span class="token operator">|</span> int         <span class="token operator">|</span> NO   <span class="token operator">|</span> PRI <span class="token operator">|</span> NULL    <span class="token operator">|</span> auto_increment <span class="token operator">|</span>
+<span class="token operator">|</span> username <span class="token operator">|</span> varchar<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">|</span> NO   <span class="token operator">|</span>     <span class="token operator">|</span> NULL    <span class="token operator">|</span>                <span class="token operator">|</span>
+<span class="token operator">|</span> password <span class="token operator">|</span> varchar<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">|</span> NO   <span class="token operator">|</span>     <span class="token operator">|</span> NULL    <span class="token operator">|</span>                <span class="token operator">|</span>
++----------+-------------+------+-----+---------+----------------+
+<span class="token number">3</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h5 id="c-插入数据"><a href="#c-插入数据" class="header-anchor">#</a> c. 插入数据</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 向a创建的数据表中插入数据
+insert into user(username, password)
+values('a', '111111'),
+			('b', '222222'),
+			('c', '333333'),
+			('d', '444444'),
+			('e', '555555');
+</code></pre></div><h5 id="d-查看插入结果"><a href="#d-查看插入结果" class="header-anchor">#</a> d. 查看插入结果</h5> <div class="language-bash extra-class"><pre class="language-bash"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> * from user<span class="token punctuation">;</span>
++--------+----------+----------+
+<span class="token operator">|</span> userid <span class="token operator">|</span> username <span class="token operator">|</span> password <span class="token operator">|</span>
++--------+----------+----------+
+<span class="token operator">|</span>      <span class="token number">1</span> <span class="token operator">|</span> a        <span class="token operator">|</span> <span class="token number">111111</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">2</span> <span class="token operator">|</span> b        <span class="token operator">|</span> <span class="token number">222222</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">3</span> <span class="token operator">|</span> c        <span class="token operator">|</span> <span class="token number">333333</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">4</span> <span class="token operator">|</span> d        <span class="token operator">|</span> <span class="token number">444444</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">5</span> <span class="token operator">|</span> e        <span class="token operator">|</span> <span class="token number">555555</span>   <span class="token operator">|</span>
++--------+----------+----------+
+<span class="token number">5</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h5 id="e-创建自定义函数"><a href="#e-创建自定义函数" class="header-anchor">#</a> e. 创建自定义函数</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- in terminal
+-- cd ~/tmp/
+-- touch function.sql
+-- code function.sql
+-- 将分界符修改为'$$'
+delimiter $$
+create function user_fn(param_userid int)
+returns varchar(50)
+begin
+    declare res_username varchar(50);
+    select username into res_username from user
+    where param_userid = userid;
+    return res_username;
+end $$
+-- 函数执行结束后将分界符改回';'
+delimiter ;
+</code></pre></div><h5 id="f-在mysql终端执行函数sql语句"><a href="#f-在mysql终端执行函数sql语句" class="header-anchor">#</a> f. 在MySQL终端执行函数sql语句</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 在MySQL终端操作环境下
+source ~/tmp/function.sql
+</code></pre></div><h5 id="g-调用函数"><a href="#g-调用函数" class="header-anchor">#</a> g. 调用函数</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 在MySQL终端操作环境下
+select user_fn(1);
+</code></pre></div><h5 id="h-查看返回结果"><a href="#h-查看返回结果" class="header-anchor">#</a> h. 查看返回结果</h5> <div class="language-bash extra-class"><pre class="language-bash"><code>+------------+
+<span class="token operator">|</span> user_fn<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">|</span>
++------------+
+<span class="token operator">|</span> a          <span class="token operator">|</span>
++------------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_2-4-2-例2"><a href="#_2-4-2-例2" class="header-anchor">#</a> 2.4.2 例2</h4> <h5 id="a-创建自定义函数"><a href="#a-创建自定义函数" class="header-anchor">#</a> a. 创建自定义函数</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>-- cd ~/tmp/
+-- touch test1.sql
+-- code test1.sql
+delimiter //
+create function rand_string(n int)
+returns varchar(255)
+begin
+    declare chars_str varchar(100) default 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    declare res_str varchar(255) default '';
+    declare i int default 0;
+    while i &lt; n do
+        set res_str = concat(res_str, substring(chars_str , FLOOR(1 + RAND()*62 ),1)); 
+        set i = i + 1;
+    end while;
+    return res_str;
+end //
+delimiter ;
+</code></pre></div><h5 id="b-执行自定义函数sql文件"><a href="#b-执行自定义函数sql文件" class="header-anchor">#</a> b. 执行自定义函数sql文件</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>source ~/tmp/test1.sql
+</code></pre></div><h5 id="c-调用自定义函数"><a href="#c-调用自定义函数" class="header-anchor">#</a> c. 调用自定义函数</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>insert into user_mem(username, password) values(rand_string(20), rand_string(20));
+</code></pre></div><h5 id="d-查看结果"><a href="#d-查看结果" class="header-anchor">#</a> d. 查看结果</h5> <div class="language-bash extra-class"><pre class="language-bash"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> * from user_mem<span class="token punctuation">;</span>
++--------+----------------------+----------------------+
+<span class="token operator">|</span> userid <span class="token operator">|</span> username             <span class="token operator">|</span> password             <span class="token operator">|</span>
++--------+----------------------+----------------------+
+<span class="token operator">|</span>      <span class="token number">1</span> <span class="token operator">|</span> EJvaa95QNiTsqCD9IZBV <span class="token operator">|</span> Dd3t0ufA2g5sRMbrrI8n <span class="token operator">|</span>
++--------+----------------------+----------------------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_3-存储过程-3"><a href="#_3-存储过程-3" class="header-anchor">#</a> 3. 存储过程[^3]</h2> <h3 id="_3-1-优点"><a href="#_3-1-优点" class="header-anchor">#</a> 3.1 优点</h3> <ul><li>存储过程可封装，并隐藏复杂的商业逻辑</li> <li>存储过程可以回传值，并可以接受参数</li> <li>存储过程无法使用SELECT指令来运行，因为它是子程序，与查看表，数据表或用户定义函数不同</li> <li>存储过程可以用在数据检验，强制实行商业逻辑等</li></ul> <h3 id="_3-2-缺点"><a href="#_3-2-缺点" class="header-anchor">#</a> 3.2 缺点</h3> <ul><li>由于支持的编程语言不同，存储过程往往定制化于特定的数据库上</li> <li>存储过程的性能调校于撰写受限于各种数据库系统</li></ul> <h3 id="_3-3-创建存储过程"><a href="#_3-3-创建存储过程" class="header-anchor">#</a> 3.3 创建存储过程</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE
+    [DEFINER = { user | CURRENT_USER }]
+　PROCEDURE sp_name ([proc_parameter[,...]])
+    [characteristic ...] routine_body
+ 
+proc_parameter:
+    [ IN | OUT | INOUT ] param_name type
+ 
+characteristic:
+    COMMENT 'string'
+  | LANGUAGE SQL
+  | [NOT] DETERMINISTIC
+  | { CONTAINS SQL | NO SQL | READS SQL DATA | MODIFIES SQL DATA }
+  | SQL SECURITY { DEFINER | INVOKER }
+ 
+routine_body:
+　　Valid SQL routine statement
+ 
+[begin_label:] BEGIN
+　　[statement_list]
+　　　　……
+END [end_label]
+</code></pre></div><h3 id="_3-4-例子"><a href="#_3-4-例子" class="header-anchor">#</a> 3.4 例子</h3> <h4 id="_3-4-1-创建存储过程"><a href="#_3-4-1-创建存储过程" class="header-anchor">#</a> 3.4.1 创建存储过程</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 次存储过程调用了&lt;2.4.2.a&gt;中的rand_string()自定义函数
+-- cd ~/tmp
+-- touch test1.sql
+-- code test1.sql
+delimiter //
+create procedure add_user_memory(n int, len int)
+begin
+    declare i int default 1;
+    while (i &lt;= n) do
+        insert into user_mem(username, password) values(rand_string(len), rand_string(len));
+        set i = i + 1;
+    end while;
+end //
+delimiter ;
+</code></pre></div><h4 id="_3-4-2-执行存储过程的sql语句"><a href="#_3-4-2-执行存储过程的sql语句" class="header-anchor">#</a> 3.4.2 执行存储过程的sql语句</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>source ~/tmp/test1.sql
+</code></pre></div><h4 id="_3-4-3-调用存储过程"><a href="#_3-4-3-调用存储过程" class="header-anchor">#</a> 3.4.3 调用存储过程</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>call add_user_memory(200, 20);
+</code></pre></div><h4 id="_3-4-4-查看结果"><a href="#_3-4-4-查看结果" class="header-anchor">#</a> 3.4.4 查看结果</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> from user_mem<span class="token punctuation">;</span>
++----------+
+<span class="token operator">|</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> <span class="token operator">|</span>
++----------+
+<span class="token operator">|</span>      <span class="token number">200</span> <span class="token operator">|</span>
++----------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> * from user_mem<span class="token punctuation">;</span>
++--------+----------------------+----------------------+
+<span class="token operator">|</span> userid <span class="token operator">|</span> username             <span class="token operator">|</span> password             <span class="token operator">|</span>
++--------+----------------------+----------------------+
+<span class="token operator">|</span>      <span class="token number">1</span> <span class="token operator">|</span> id1jmG9BlNOtKdDnOMj3 <span class="token operator">|</span> bBiwz7HZJt4Jh4jdXYSg <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">2</span> <span class="token operator">|</span> yM886ZtdvHONrBzSxTIG <span class="token operator">|</span> aBnUhtmfZ5fRm46ak1Vo <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">3</span> <span class="token operator">|</span> 4YxA9RGGaGHkoOK7dxSB <span class="token operator">|</span> fgrdDkzKQRy5zqi28opI <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">4</span> <span class="token operator">|</span> ax2qPK4XoXsfIHaCoWoY <span class="token operator">|</span> yGAJLqG0MKgSqlihmMH0 <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">5</span> <span class="token operator">|</span> MI58gLPGPSN9eyTDkBQh <span class="token operator">|</span> JCLOzhyJPQwUQl0OV1bI <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">6</span> <span class="token operator">|</span> QVTA5tZmDYMOBo0F9DzK <span class="token operator">|</span> U9QDranaAhrdCfgnVmTc <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">7</span> <span class="token operator">|</span> b8ZmHdPjWD9GQ1nE0TjH <span class="token operator">|</span> oIgYWC8DC2aBiyIIjfaT <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">8</span> <span class="token operator">|</span> RpjaK5ZALU5zsmjjsctD <span class="token operator">|</span> yKVbY9IWoZAN6XlGbJVh <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token number">9</span> <span class="token operator">|</span> rfLV9OsGTemUlQZhgiyH <span class="token operator">|</span> Ijd0f3kmCSkUmWsiXLJf <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">10</span> <span class="token operator">|</span> TyWRlZIu6SVQgC8GOUVJ <span class="token operator">|</span> KpAA07nqMuX7Ap8hQeqj <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">11</span> <span class="token operator">|</span> 5kf4u2BIDSgAYXGoLtXa <span class="token operator">|</span> MiWGpOJ3S4zwGKt0pUaV <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">12</span> <span class="token operator">|</span> Z1YC15eJOGR5EShAXTpa <span class="token operator">|</span> vPuPtI1OOtNmf1aDxCkD <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">13</span> <span class="token operator">|</span> 259l8tPy5EP1r2F4atJ3 <span class="token operator">|</span> WoWnS7PCp3T8OuRFDZTm <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">14</span> <span class="token operator">|</span> Vp67agHytBnXupozxOk0 <span class="token operator">|</span> TjIt5QNj1YGijul7mkoO <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">15</span> <span class="token operator">|</span> J4ZAMZs8bl2XyJQSFzFu <span class="token operator">|</span> fFoOJ53RZcRxX28pu4G4 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">16</span> <span class="token operator">|</span> 8j1YD8CurBxINHXyGBO3 <span class="token operator">|</span> JkikyGzCd5CHubjQ8Yin <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">17</span> <span class="token operator">|</span> S3u7YmIjf9RGGaFHid2n <span class="token operator">|</span> BLPHPSL1GaDwwSEr9fDe <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">18</span> <span class="token operator">|</span> 9SL3MAqdFvm7lcMcsxa4 <span class="token operator">|</span> EWyOfDfda2xn6hSpeN73 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">19</span> <span class="token operator">|</span> KrMovckThBZ0ThBXP7Wc <span class="token operator">|</span> 2oG5cCiung07qAvCp1Lx <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">20</span> <span class="token operator">|</span> iGlwsv1rWfhsgQhFmEYL <span class="token operator">|</span> JcFALSXXNXc0f6yjMNvW <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">21</span> <span class="token operator">|</span> 3gYXFks773LtUYXJEUrh <span class="token operator">|</span> VDf9SKXoWkInDQbdn455 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">22</span> <span class="token operator">|</span> Xp0DYO1tbhJESgzUElCV <span class="token operator">|</span> C7CzPfDfc6JeKVec8V4p <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">23</span> <span class="token operator">|</span> ETlThzOcoeQl1Tgvx3va <span class="token operator">|</span> ciKFYGjlF9ya1rYpZwuJ <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">24</span> <span class="token operator">|</span> ZD26dFwrsPCq8ctBrdCj <span class="token operator">|</span> vppDO1t74OHTccdjMMrG <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">25</span> <span class="token operator">|</span> Vo2R2pOHQ0kr60zFs888 <span class="token operator">|</span> 70vl1XyLZtez0cM9hMU1 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">26</span> <span class="token operator">|</span> fZ11R4DLNya2wkUp8hSl <span class="token operator">|</span> XASwMajXGmCP6U5yn0Ky <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">27</span> <span class="token operator">|</span> n6brw9YinPQCoYtk1ZJv <span class="token operator">|</span> doawTN6ZvnbDr9hLOCvu <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">28</span> <span class="token operator">|</span> LcA8NnkoPMeIG9w2pMyf <span class="token operator">|</span> o7cuIViASsw5GYHqQOk4 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">29</span> <span class="token operator">|</span> bxZaHOQDr8eA6zmYAQkY <span class="token operator">|</span> Jxm3ZFcQru0qU5zsnmyu <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">30</span> <span class="token operator">|</span> FInADghrcuIYxChrbrw6 <span class="token operator">|</span> OAjC3fUDioUeemUiATz0 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">31</span> <span class="token operator">|</span> 9AhwBhp65XoVhuqv4Iax <span class="token operator">|</span> 3wetwZf7I0LDIwjP2xrs <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">32</span> <span class="token operator">|</span> KeJNEGkoQRBitnh7Ap7f <span class="token operator">|</span> HzCe8QCoZBQiOYjscuDB <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">33</span> <span class="token operator">|</span> WJG1Vo1MGTgslcNdyY14 <span class="token operator">|</span> 54Ub4AB6v6PGLAwEwxZ7 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">34</span> <span class="token operator">|</span> sPya2ubjOXc0f2kkwsyg <span class="token operator">|</span> sk9zhwAfkJv97Wc0ijth <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">35</span> <span class="token operator">|</span> O6STJNCxHGcK1IkkwqpB <span class="token operator">|</span> FmBP70tezYZSgvzdc91u <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">36</span> <span class="token operator">|</span> dtx5I7hVDfaURsxa2vjQ <span class="token operator">|</span> 81ugFpQSEvnfXQbgC8FK <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">37</span> <span class="token operator">|</span> BAXSkUmVp7bofWLQL8du <span class="token operator">|</span> FGihixDmLylSba5Knt2D <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">38</span> <span class="token operator">|</span> To8j12WrcxVQjSeqhYQ7 <span class="token operator">|</span> V8KaokjpXq3S4xkRba93 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">39</span> <span class="token operator">|</span> EYKFVuwX3dNajUpbxZ9B <span class="token operator">|</span> reEq0CSn57cvL8crsNrE <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">40</span> <span class="token operator">|</span> NTSA8Mj3dHJnxobBgp4W <span class="token operator">|</span> kFbMal47gN1BKLqGXAUC <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">41</span> <span class="token operator">|</span> e7LhXMRNhRfxNdvL63QT <span class="token operator">|</span> LZujXHqTZ9Bq7akYHsZp <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">42</span> <span class="token operator">|</span> WkD00OTTBc0g8LfM0xwO <span class="token operator">|</span> nfXTpcEsdxQtFKBzTA8J <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">43</span> <span class="token operator">|</span> 4ZCVElyz5wbeqi29sHYA <span class="token operator">|</span> QiMQJZBRlWzPhLOAkLFR <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">44</span> <span class="token operator">|</span> 92AEjsdyXWGs2F23ZBVD <span class="token operator">|</span> fbYdWWJEVwFBRlXBZYJz <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">45</span> <span class="token operator">|</span> uCsfHDSjOW5tYggkIpNx <span class="token operator">|</span> 8TUJMv4G20Jv8ZoOK9mc <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">46</span> <span class="token operator">|</span> JS4yoatGS9ZkvojbQvPr <span class="token operator">|</span> BuvSHIlqWhp3QUSvJ0Gc <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">47</span> <span class="token operator">|</span> NfHyxQsCyM4OIXwA9TPj <span class="token operator">|</span> VvCnT8TSyXXNW9Nmh8EG <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">48</span> <span class="token operator">|</span> jlDZTmVo0Gf1cOjWD9IY <span class="token operator">|</span> APcm59mbEzJPK4Yung07 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">49</span> <span class="token operator">|</span> pxgzSvMfGxrtSNdxRz4w <span class="token operator">|</span> bernpLpCIvhJDNV5wcfv <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">50</span> <span class="token operator">|</span> AhshUuCsfIG7mifaYaL9 <span class="token operator">|</span> iQdo9onxpgUCbVTwL63M <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">51</span> <span class="token operator">|</span> CB01YC3dNahLMrJ8ng3l <span class="token operator">|</span> pOIZBUzWPcm30Gf1fZ4b <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">52</span> <span class="token operator">|</span> BglKBzVIF1XxGDWDcUQj <span class="token operator">|</span> RceqhYQ95OBsiWFnGaBk <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">53</span> <span class="token operator">|</span> GhaRBixEsbm6i26eJNCx <span class="token operator">|</span> HHeTDkAO6VaSJU9TOhKK <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">54</span> <span class="token operator">|</span> mpNCwz9TPkXGmAGvl0Sb <span class="token operator">|</span> 6RNgLSTHE0Sgvzb3ysuS <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">55</span> <span class="token operator">|</span> KYumbEyHCRgC7zlR6NuT <span class="token operator">|</span> QndL1F5i3cIOK7bruZhj <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">56</span> <span class="token operator">|</span> zLXkCYOYjr9gHyuCtk6m <span class="token operator">|</span> ltaexNfEoRURpi4kf8Lh <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">57</span> <span class="token operator">|</span> VC9K68dtBo1Kv94Koyqj <span class="token operator">|</span> 6oxn58gMWeaW4mpRSClF <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">58</span> <span class="token operator">|</span> bK1KtXcZbNgLSUKT3rTZ <span class="token operator">|</span> 4fPhLNx8SQsyekMLlhcZ <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">59</span> <span class="token operator">|</span> aITc7PDyHGbFCXKH6gPd <span class="token operator">|</span> stOtMj3dKVfgp7dyWTtv <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">60</span> <span class="token operator">|</span> 0ilGcPm9wYbQtFLGWtqw <span class="token operator">|</span> a8YlE4dINDB00UlR5G2Y <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">61</span> <span class="token operator">|</span> AQjRen43S2sXir8eA4qK <span class="token operator">|</span> lhfdc9ZnJozwKZxz3sW9 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">62</span> <span class="token operator">|</span> OrDGks73JoBDfaVWMXea <span class="token operator">|</span> W3jgbZe0eVMZs9ewL61H <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">63</span> <span class="token operator">|</span> fXTrlie7I58fEnKrRL5Y <span class="token operator">|</span> uk37iWDe5zpatHTfqapn <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">64</span> <span class="token operator">|</span> whIzvHQW16k8x8V2fYZP <span class="token operator">|</span> 4ETlUlPXaLcvLaokhfdd <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">65</span> <span class="token operator">|</span> fsnklyDmHf19AjE7tTTz <span class="token operator">|</span> 4sV4oETkOUY0Vtqv8Yin <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">66</span> <span class="token operator">|</span> T9TRuGNKdDp0BPdqkbK4 <span class="token operator">|</span> Uc7RM8bocGE11UjEcRxW <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">67</span> <span class="token operator">|</span> YRfvAgp3WnS7MorTY12Y <span class="token operator">|</span> ASrqBDbPqxdiIwkRba6T <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">68</span> <span class="token operator">|</span> 09zeiFe2jioWlMELJcCk <span class="token operator">|</span> CWJFYIu83Ih4lnEXIwlY <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">69</span> <span class="token operator">|</span> FhghrbtEHnEWAWMWe7Mn <span class="token operator">|</span> pJh3fVKNBsj2453T6H2W <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">70</span> <span class="token operator">|</span> o1NHXvwWYRftvUQodM5X <span class="token operator">|</span> kBRm1VmR3xlYEdXZSjKC <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">71</span> <span class="token operator">|</span> IxocDr8bocIMDD5qH2Vn <span class="token operator">|</span> VkJu5OEEaIT9X8FMI7fI <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">72</span> <span class="token operator">|</span> G6leWUvFF9zhyJPOonxp <span class="token operator">|</span> gXNYjtgLTY26hTuzejHn <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">73</span> <span class="token operator">|</span> CO2DTn57akYLGZIt3F1Z <span class="token operator">|</span> HmxsvZjoUc8RMajVwGHh <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">74</span> <span class="token operator">|</span> 9MfMZpXoWnR3xn441Ilq <span class="token operator">|</span> U7I2UfnZE8ycb8ZmG9Bm <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">75</span> <span class="token operator">|</span> R1pMziD7yfpbuIYzKRUM <span class="token operator">|</span> 2F6lg8J68ctAkKAvCseB <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">76</span> <span class="token operator">|</span> d4zux3yoawWZXFjnNHYA <span class="token operator">|</span> QkXEdVSodINHVlOQCoYx <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">77</span> <span class="token operator">|</span> DnOMhVC9J52NFOV05hWI <span class="token operator">|</span> zB6wcftsGUlPW2g19vW3 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">78</span> <span class="token operator">|</span> h4kilHh8FLH0NPzc9Zku <span class="token operator">|</span> iTqgSph2bDscwNgN2CO1 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">79</span> <span class="token operator">|</span> zA3nzxOhQcjOZioVhupo <span class="token operator">|</span> CMQJZAO6WgiyIKpFWyNb <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">80</span> <span class="token operator">|</span> kYHrV8Kcy0cRy2nyxQru <span class="token operator">|</span> ZlyA9OqwciIuabiJBHwk <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">81</span> <span class="token operator">|</span> VuwZdXXJFWAVIEYKERdi <span class="token operator">|</span> GoKozxM8dtyeiC4jbNk2 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">82</span> <span class="token operator">|</span> 6eFtdtzjD6rLkaK1Hid2 <span class="token operator">|</span> nAFoOI0Kva82AHxrrKfP <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">83</span> <span class="token operator">|</span> gFoLv6Nw3zxNez08w4CI <span class="token operator">|</span> AB5rOBqapnt70uhKJgYW <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">84</span> <span class="token operator">|</span> C5rMqCFjpXoVixFxvLao <span class="token operator">|</span> gYYJCJCJDP3DTmZHnBKM <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">85</span> <span class="token operator">|</span> sOuUTB9MgQhIzyRwQtHV <span class="token operator">|</span> lOTQnbCnUgq9iUsqzpbw <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">86</span> <span class="token operator">|</span> WVGt99ckUp7eChmOOrBz <span class="token operator">|</span> Rpke3pKi7yfp8gMYkAN2 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">87</span> <span class="token operator">|</span> EXHt71CP7Wd5EP3CLPHO <span class="token operator">|</span> Nnlr0xuJ0E8vZf7H0Jt0 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">88</span> <span class="token operator">|</span> ufEinS5CFktdwMbrw4DM <span class="token operator">|</span> RNeBaUQjTo57bplluhLN <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">89</span> <span class="token operator">|</span> w6NtRGE6pzqj6pBB4ozu <span class="token operator">|</span> CtjYMOya1ubjP2xph047 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">90</span> <span class="token operator">|</span> fKPK4VixEvmaAiwz8NrC <span class="token operator">|</span> Ee2lqVd8SPm7mg7CzQod <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">91</span> <span class="token operator">|</span> L1F6mmxsw4DOYhlKu2CL <span class="token operator">|</span> OBsiVzVJJljpWlGhbWWM <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">92</span> <span class="token operator">|</span> TZ5kcRwUOcn9rAsoqOAm <span class="token operator">|</span> Sb4ESftuRExAaSKXmLCD <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">93</span> <span class="token operator">|</span> aL8dyWSqlg9MgSo9sGS8 <span class="token operator">|</span> V3kjpYrbofSwOmdQmaAi <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">94</span> <span class="token operator">|</span> xClHjkvnfUFr1F3avQwY <span class="token operator">|</span> 6qFVqdDmMEIt6U3nzySC <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">95</span> <span class="token operator">|</span> gjAQjQ7U2kkuiSlWvx0h <span class="token operator">|</span> cZcTEtgHyyTHBMXfdca6 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">96</span> <span class="token operator">|</span> PHQYcUM0xxVPexM9fBaP <span class="token operator">|</span> uMiZSfuvX3eTzZ6ovaa9 <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">97</span> <span class="token operator">|</span> 95QOng4nu9aevEBVB8GP <span class="token operator">|</span> VZZSelR7RNeCd3t4Jlks <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">98</span> <span class="token operator">|</span> 75Veb2wkTkMMqCC7zjJw <span class="token operator">|</span> hFjpZwvNhTqhXQ82BIBK <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">99</span> <span class="token operator">|</span> Lnu6U5wa94Ji6tTVMYkz <span class="token operator">|</span> HDWC5qJeOagCbRClHjhj <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">100</span> <span class="token operator">|</span> xDmKwa96T0dRuK4WnS6J <span class="token operator">|</span> atK6am8sJ551Hh8IXtng <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">101</span> <span class="token operator">|</span> 3llAHCO3HbDuoi9J0FbJ <span class="token operator">|</span> ZAM1zChkE7v1pNAqbtHS <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">102</span> <span class="token operator">|</span> 8SPkZOXbTKWfhvvQz9UV <span class="token operator">|</span> IG6k8yc9ZkzEq0yDlE25 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">103</span> <span class="token operator">|</span> aqsPBq65XmLzpdDpXrak <span class="token operator">|</span> ZNTSA5ykOV1cM9gIzB7C <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">104</span> <span class="token operator">|</span> BZXGnG8sH0Kyo9olpPJ3 <span class="token operator">|</span> S5ER8YhlJrPITb2vfxPn <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">105</span> <span class="token operator">|</span> eRrsNrFR8V4rNvYd1haO <span class="token operator">|</span> pu3CMU3nystOuTOduDAQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">106</span> <span class="token operator">|</span> hKIdJQQAeeiB022VlMI5 <span class="token operator">|</span> 53OLdBfhupsTWPcjP4H7 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">107</span> <span class="token operator">|</span> mf2id1haQx0g7GTdiEcS <span class="token operator">|</span> FwtBqbvMhQdpfSrrGXAU <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">108</span> <span class="token operator">|</span> Cd3u7XhoWoZCYRbbdn2V <span class="token operator">|</span> kJwesqCDbPrwbcespu6T <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">109</span> <span class="token operator">|</span> 09AkIsWc1ks9agEhkE5k <span class="token operator">|</span> cSBd7Mou6TZ8x6LnoFYL <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">110</span> <span class="token operator">|</span> H454UaZgd7NtPx2sXhpZ <span class="token operator">|</span> yGyBbX6sPzfnZD15arxb <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">111</span> <span class="token operator">|</span> 8ZnKrMsKdIJloNAqaqrL <span class="token operator">|</span> lf5u4JfTz1fZ243Udden <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">112</span> <span class="token operator">|</span> 2Tb5H48hQfxK1GdTBbYb <span class="token operator">|</span> NgO4KpDNW7CzRqnqRTII <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">113</span> <span class="token operator">|</span> jgaW17otZnKsQK2LznZI <span class="token operator">|</span> pJjdY4i3h2bFAO970vk0 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">114</span> <span class="token operator">|</span> R7SSBea0kvpjaMfJLuX9 <span class="token operator">|</span> K8hRfvFBUyUJKoytvW05 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">115</span> <span class="token operator">|</span> fN6Vc4zttQCoViyKVd8R <span class="token operator">|</span> JWlJv7Xip0D133UehvAf <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">116</span> <span class="token operator">|</span> lLFQ4DP6PHPTQncHJpFZ <span class="token operator">|</span> NRL5YsboeOeA3lpPNl8t <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">117</span> <span class="token operator">|</span> QBmQYaJ1Ku3F0ThzRrtQ <span class="token operator">|</span> Dtj1XAUB9NmhaNk6nqQO <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">118</span> <span class="token operator">|</span> jYOW9J55Yr7agFqU9Pw0 <span class="token operator">|</span> jpT7KdFwqsNuSN9bm48g <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">119</span> <span class="token operator">|</span> JLtTUGxsw6MpxjOV4pFX <span class="token operator">|</span> D6v1t70xwPqrOzekLENU <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">120</span> <span class="token operator">|</span> Z22XwAd8RIT8Ox3xmZKD <span class="token operator">|</span> JCLLpBAYYLLnrV7FOTTB <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">121</span> <span class="token operator">|</span> bVWJJh18rCFgbY8AmTdg <span class="token operator">|</span> uvVXQa83G5fObhJBHyuE <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">122</span> <span class="token operator">|</span> D28mhaNl9Cq78ajTlThz <span class="token operator">|</span> Ssw6JfRqpzrnqMuX9J1N <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">123</span> <span class="token operator">|</span> LgSrovckR93DRfux2qSW <span class="token operator">|</span> TwK0CVA05hYRgyPkXGlx <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">124</span> <span class="token operator">|</span> wOmbEAN2G8rGTiB0341J <span class="token operator">|</span> t1ufDfb0kuiQcjLKh28r <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">125</span> <span class="token operator">|</span> DFhgjBTwL775U9QBlMFS <span class="token operator">|</span> diGnDWAYWC9GPYaMeEnN <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">126</span> <span class="token operator">|</span> I1LDHqT2nywOhQdn57cs <span class="token operator">|</span> x8V3je4v95PHR1oHdNaj <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">127</span> <span class="token operator">|</span> To44YtiVAYVyPjVyPl48 <span class="token operator">|</span> iXHvetyb4DNUZ4fRqlks <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">128</span> <span class="token operator">|</span> 6Ys9gGueyTDmHicY6oxl <span class="token operator">|</span> Vtpv6OEE6pBB2fYWFktd <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">129</span> <span class="token operator">|</span> vIT9X8EGkr4SZaJ0DZSf <span class="token operator">|</span> ux2pNAo40D132R3xn7gN <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">130</span> <span class="token operator">|</span> 3IeUDkxBc1lxruVZ23Yx <span class="token operator">|</span> CivsCyL0yCip3RW18pxf <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">131</span> <span class="token operator">|</span> soqMuYbTHHeVJLsOyc91 <span class="token operator">|</span> s3MAqbvMfJKqGYFf3oDQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">132</span> <span class="token operator">|</span> bbdlWwCnS6I7iXLKj7w6 <span class="token operator">|</span> Oyb7QIS4BDbTKT5xkQ3B <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">133</span> <span class="token operator">|</span> FmG9w0ilE5j7x91s4OGQ <span class="token operator">|</span> 1pPLcvOnicX29vRGDYMQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">134</span> <span class="token operator">|</span> K0D0WvBhtl7sJ6cxWTxN <span class="token operator">|</span> dwOneTz4tYkyCglIrQL8 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">135</span> <span class="token operator">|</span> eA3mt73IfWN1xsv0mBLR <span class="token operator">|</span> SBd7MpwfvDtl7ou6QOk5 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">136</span> <span class="token operator">|</span> eL0wrsPCp4WnS4AxL5Wj <span class="token operator">|</span> yFwrw7PEBTuDwy2nDSiF <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">137</span> <span class="token operator">|</span> kr5Yq4Ub1oKozxNdyYZU <span class="token operator">|</span> qfLYnNJ69jUrlf2icWZW <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">138</span> <span class="token operator">|</span> zQncFCTuzfmS9Ye5BB3g <span class="token operator">|</span> 038lbJUegutJ6ak1XASv <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">139</span> <span class="token operator">|</span> GLzsosV8GTfp7eCfdb5K <span class="token operator">|</span> j8DzM2F5hXLQJXseEoPN <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">140</span> <span class="token operator">|</span> l9zgp68duED29tLfKRVR <span class="token operator">|</span> n7k7rI57am7k9zizQl1V <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">141</span> <span class="token operator">|</span> o3UgnXtj243UfmUjFf3p <span class="token operator">|</span> IbBkFcRwRy2nEUuvW01X <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">142</span> <span class="token operator">|</span> ATvK2NFP0lzFs75T4wdl <span class="token operator">|</span> VriYOYfc6JcEtiSm0OQF <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">143</span> <span class="token operator">|</span> E39qwcfwGF7sKcCiuqsT <span class="token operator">|</span> TFuiO1wph18rDJxn6cz3 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">144</span> <span class="token operator">|</span> rQJ0GdTEoQVVIAGs6XmK <span class="token operator">|</span> tXfaW3kgbW2azc6Kh15e <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">145</span> <span class="token operator">|</span> KT2ls85SXZWxJT8NpxhC <span class="token operator">|</span> 4nxm31LBBZ0TjIu7YmHh <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">146</span> <span class="token operator">|</span> aOpqLpyqh0ZNOx4BCaMg <span class="token operator">|</span> MZq0zIG9uQCp1Imt9986 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">147</span> <span class="token operator">|</span> U4sXe8Pzb5GZMKgSqlhd <span class="token operator">|</span> 6FR8V5u3BICNV7EJwfxK <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">148</span> <span class="token operator">|</span> 0DXIzzWSpdGE232R2rU5 <span class="token operator">|</span> yn2S6MorTXXJG0R9Xd0g <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">149</span> <span class="token operator">|</span> 6ByOcpi5oxn43VixGCRk <span class="token operator">|</span> UmXwz6GXATyVMYoS1ltc <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">150</span> <span class="token operator">|</span> rpAyQnaBjC0YJyrot2AE <span class="token operator">|</span> lDXHt70wrtUWQciKG0R5 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">151</span> <span class="token operator">|</span> H7hUyRuIWo0Gg6ylQ1s3 <span class="token operator">|</span> Ih5qG0Q2udo9sFPXaPqw <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">152</span> <span class="token operator">|</span> 8Xfda2udsuTQncGHf05i <span class="token operator">|</span> 16fN4QNl8uSN9bm453S4 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">153</span> <span class="token operator">|</span> zrnpJg037eFs75T3qPGN <span class="token operator">|</span> KeILu1t986U7GTiD5ozv <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">154</span> <span class="token operator">|</span> DumeTBbYaHTca6Nzfo3Y <span class="token operator">|</span> uojf8KcBfhwAc5EO0qUa <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">155</span> <span class="token operator">|</span> UVHxuED27mfZ26eGAIF1 <span class="token operator">|</span> Wsj39sEKDJCIzzWQevDu <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">156</span> <span class="token operator">|</span> ng2eTCgjCXNXe6I3ZBSq <span class="token operator">|</span> ljlDYP1s3LuZlBO7ZpVg <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">157</span> <span class="token operator">|</span> oZAO99aestPy7NrFSa6R <span class="token operator">|</span> NgJJh5rNuTSuIUfnWqam <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">158</span> <span class="token operator">|</span> bFE38opH6gPcm2YzN4QR <span class="token operator">|</span> BhsgMXhlKwfwHMEIu97Z <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">159</span> <span class="token operator">|</span> pWkE7tSNdwMbsw5G32S4 <span class="token operator">|</span> CGqT1igfhuqyiFgd5DMQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">160</span> <span class="token operator">|</span> JWnUgo4Xp3RY8zhwEwtF <span class="token operator">|</span> Ju82BIFYKGXC17mid3qQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">161</span> <span class="token operator">|</span> MeFtajSiGmDUtsI2S8SP <span class="token operator">|</span> m9w0gbW2bEzHDTroqODy <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">162</span> <span class="token operator">|</span> HHfZ0WvwZbMdz1ic0eY3 <span class="token operator">|</span> ay4whEe5zsnoF0Q3BHud <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">163</span> <span class="token operator">|</span> tw3wjNU1cL2LwcgAWMV9 <span class="token operator">|</span> PwY6tUVMWc2pLsOx5DMQ <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">164</span> <span class="token operator">|</span> IR1mywQrxbb96QNgLT0a <span class="token operator">|</span> EC01Tfo579exRxWUzWSm <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">165</span> <span class="token operator">|</span> 0MMmhc0eY28mdTBd5FUn <span class="token operator">|</span> 1OOvTNagEkyBaTOcrpBB <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">166</span> <span class="token operator">|</span> 1bIOLgRjP4IbCoYuppG0 <span class="token operator">|</span> PZhjwvNiYP3CNW8J40D2 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">167</span> <span class="token operator">|</span> 6fN5RTHF4eKT5zqfM3Ko <span class="token operator">|</span> zuCtl9yb4FVvy7LkcPoj <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">168</span> <span class="token operator">|</span> e1iggmR4zvGJsWaQx3rW <span class="token operator">|</span> cYaJZBTwL4U9RIQUOewL <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">169</span> <span class="token operator">|</span> 62LykPZhhq53NFPW3khf <span class="token operator">|</span> fnXtl7pwfwHNJ69iReqh <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">170</span> <span class="token operator">|</span> ZTo57al48jZSfsmf3kjp <span class="token operator">|</span> YuojcWUyTGwrtSOfEmF8 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">171</span> <span class="token operator">|</span> uUUDjthP95QOoje4va83 <span class="token operator">|</span> HbDrbogXSm1PYaMgMWc2 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">172</span> <span class="token operator">|</span> qSWTtw0mAJKlkqYtiUvD <span class="token operator">|</span> vqtXcZaITaYfaUUEoOLe <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">173</span> <span class="token operator">|</span> IG7nls73Mxcfrk8zgqbv <span class="token operator">|</span> OnjikDZVsnlpRX15cz5y <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">174</span> <span class="token operator">|</span> lUmWtl8w2qSWUB4rOydh <span class="token operator">|</span> xGGbK0E3ax2mAFpRX3eR <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">175</span> <span class="token operator">|</span> rtSNeyVPcn7hUwL4Vedd <span class="token operator">|</span> gvzc7PEAQjTjKDNW7BvA <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">176</span> <span class="token operator">|</span> dc90pSY4gXQa95OGMI6b <span class="token operator">|</span> rtV2g2eVKOCwClKwbcjP <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">177</span> <span class="token operator">|</span> 0pT2lr2Hg07nqMw4DP5N <span class="token operator">|</span> x8U1aEyGBMYmIjgd7NsK <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">178</span> <span class="token operator">|</span> eKU7J8k4cCmNHZHnDTo6 <span class="token operator">|</span> bqsOw2qSZ6ot5OED6pzs <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">179</span> <span class="token operator">|</span> qCC8CxGCSn7gPcm33TaY <span class="token operator">|</span> f9OuQBjARn8pv6OCtnh9 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">180</span> <span class="token operator">|</span> IZD3dL0ALV8J43S2rT0b <span class="token operator">|</span> L4T7KdGAJKnvfyQqsQFD <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">181</span> <span class="token operator">|</span> 15apozySy0cOhRfxOeA5 <span class="token operator">|</span> xeqhVB8FKCIwlYEeZ7uV <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">182</span> <span class="token operator">|</span> Z0TiFgaREwwQwSGCVyTA <span class="token operator">|</span> 7HWreFsbm5cz5AwFE28n <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">183</span> <span class="token operator">|</span> kkvqpBC9K9k1XzPgHwn7 <span class="token operator">|</span> k9zdguwWZZMMrHYC15bx <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">184</span> <span class="token operator">|</span> WXP6SSCkzLVaTN886Zq2 <span class="token operator">|</span> LyiDaK64Vd9X8HSb6NuW <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">185</span> <span class="token operator">|</span> 3i8EHltdsuX7zlPX7Apa <span class="token operator">|</span> pnwkTjLH452LyjIvessK <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">186</span> <span class="token operator">|</span> bz5ypbwTM4QQvPtLdCiq <span class="token operator">|</span> 8dwPnfYXJACbSHHeUFr2 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">187</span> <span class="token operator">|</span> KrQHPTNbkWxIPQx0hc1l <span class="token operator">|</span> viReqi15dFvmaza1pOEI <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">188</span> <span class="token operator">|</span> rU4rQJYvtFMH3YyFvpmp <span class="token operator">|</span> NBsk6mmxrtTPm7mh9Kaq <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">189</span> <span class="token operator">|</span> rNsLhYShD8DBYRgAZZR9 <span class="token operator">|</span> 2BGs72EYNRK1GdPngZ23 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">190</span> <span class="token operator">|</span> Xuqu0nLu2xobz9TSvJ1J <span class="token operator">|</span> pH8opJgVIFYJBC9J2PRE <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">191</span> <span class="token operator">|</span> yCitjXIxocDq3POopG32 <span class="token operator">|</span> TdccfsopKj9GOPAhrfIF <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">192</span> <span class="token operator">|</span> 37eFuiO3G6i26hSrmmxt <span class="token operator">|</span> Bq9l5fN6XlHid1jir8cp <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">193</span> <span class="token operator">|</span> h3h1aBkIqPGONpu5Nydh <span class="token operator">|</span> yN9exRxUM0voiaJ1JsW9 <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">194</span> <span class="token operator">|</span> MgQevFGg4pI9tKarxemW <span class="token operator">|</span> sj1ZMJcDpWnTaYcUN73M <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">195</span> <span class="token operator">|</span> xb93DSlUlPW4oyqkcRy1 <span class="token operator">|</span> igiunje4u7Wc0g8HZD5k <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">196</span> <span class="token operator">|</span> f6BwGGdRwRBfhvvRCnT8 <span class="token operator">|</span> Ox5DLMqFRb93G33XtjZR <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">197</span> <span class="token operator">|</span> cciHrVbX5owhGqVaW1az <span class="token operator">|</span> a1pRTIIiaOoklAKPK78b <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">198</span> <span class="token operator">|</span> kXFiirbqrJawVTyVO983 <span class="token operator">|</span> Knt70wrv0lyz3mvhKH8r <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">199</span> <span class="token operator">|</span> Atpv80qYr60BRiKI9uMi <span class="token operator">|</span> YRb96QNfKNzjFihnR0ks <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token number">200</span> <span class="token operator">|</span> 6ZwqsOzfkMI59k1XyLYp <span class="token operator">|</span> 0E39sFNOy9W3kilHjioV <span class="token operator">|</span>
++--------+----------------------+----------------------+
+<span class="token number">200</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_4-利用数据的存储过程生成测试数据"><a href="#_4-利用数据的存储过程生成测试数据" class="header-anchor">#</a> 4. 利用数据的存储过程生成测试数据</h2> <h3 id="_4-1-流程"><a href="#_4-1-流程" class="header-anchor">#</a> 4.1 流程</h3> <ol><li>创建内存表</li> <li>创建数据表</li> <li>创建随机生成函数</li> <li>创建存储过程</li> <li>执行存储过程</li> <li>查看内存表数据条数</li> <li>将内存表的数据插入到数据表</li> <li>查看普通标的数据</li> <li>删除内存表的数据</li></ol> <h3 id="_4-2-实现"><a href="#_4-2-实现" class="header-anchor">#</a> 4.2 实现</h3> <p>在第4章以前设计好的内容，如下：</p> <ul><li>内存表</li> <li>普通数据表</li> <li>自定义函数</li> <li>存储过程</li></ul> <p><em>以下实现过程中将直接使用上述内容，略过内容的具体实现过程。只记录必要的语句或结果。</em></p> <h4 id="_4-2-1创建内存表以及普通数据表"><a href="#_4-2-1创建内存表以及普通数据表" class="header-anchor">#</a> 4.2.1创建内存表以及普通数据表</h4> <p>结果如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> show tables<span class="token punctuation">;</span>
++----------------+
+<span class="token operator">|</span> Tables_in_test <span class="token operator">|</span>
++----------------+
+<span class="token operator">|</span> user           <span class="token operator">|</span>
+<span class="token operator">|</span> user_mem       <span class="token operator">|</span>
++----------------+
+<span class="token number">2</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.01</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4-2-2-调用存储过程"><a href="#_4-2-2-调用存储过程" class="header-anchor">#</a> 4.2.2 调用存储过程</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>call add_user_memory(200, 20);
+</code></pre></div><p>结果如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> from user_mem<span class="token punctuation">;</span>
++----------+
+<span class="token operator">|</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> <span class="token operator">|</span>
++----------+
+<span class="token operator">|</span>      <span class="token number">200</span> <span class="token operator">|</span>
++----------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4-2-3-将内存表中数据复制到普通数据表中"><a href="#_4-2-3-将内存表中数据复制到普通数据表中" class="header-anchor">#</a> 4.2.3 将内存表中数据复制到普通数据表中</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>insert into user select * from user_mem;
+</code></pre></div><p>结果如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> from user<span class="token punctuation">;</span>
++----------+
+<span class="token operator">|</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> <span class="token operator">|</span>
++----------+
+<span class="token operator">|</span>      <span class="token number">200</span> <span class="token operator">|</span>
++----------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4-2-4-验证内存表中数据和普通数据表中数据的一致性"><a href="#_4-2-4-验证内存表中数据和普通数据表中数据的一致性" class="header-anchor">#</a> 4.2.4 验证内存表中数据和普通数据表中数据的一致性</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql -uroot -p -e <span class="token string">&quot;select * from user&quot;</span> <span class="token builtin class-name">test</span> <span class="token operator">&gt;</span> info_user.txt
+mysql -uroot -p -e <span class="token string">&quot;select * from user_mem&quot;</span> <span class="token builtin class-name">test</span> <span class="token operator">&gt;</span> info_user_mem.txt
+<span class="token function">diff</span> info_user.txt info_user_mem.txt
+</code></pre></div><h4 id="_4-2-5-删除内存表中结构"><a href="#_4-2-5-删除内存表中结构" class="header-anchor">#</a> 4.2.5 删除内存表中结构</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>truncate table user_mem;
+</code></pre></div><p>结果如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">select</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> from user_mem<span class="token punctuation">;</span>
++----------+
+<span class="token operator">|</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span> <span class="token operator">|</span>
++----------+
+<span class="token operator">|</span>        <span class="token number">0</span> <span class="token operator">|</span>
++----------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+</code></pre></div><h2 id="附录"><a href="#附录" class="header-anchor">#</a> 附录</h2> <h3 id="_1-阅读本文档需要掌握的sql语句"><a href="#_1-阅读本文档需要掌握的sql语句" class="header-anchor">#</a> 1. 阅读本文档需要掌握的SQL语句</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 1. 创建数据表 create table
+create table [tableName] (
+		[元素名] [数据类型] [属性],
+  	...
+  	...
+)
+
+-- 2. 插入数据 insert into
+insert into [tableName](元素名, 元素名, ...)
+values (value, value, ...),
+			 (value, value, ...),
+			 ....;
+
+-- 3. 将表中所需数据复制到新表中 select into from
+select [元素名] into [元素名] from [表名] where [判断式];
+
+-- 4.删除数据表中的数据
+delete from [tableName]；
+
+-- 5.删除数据表中的数据
+truncate table [tableName];
+
+-- 6.执行sql文件
+source [path]
+
+-- 6.调用function
+select [functionName(parameters)];
+
+-- 7.调用存储过程
+call [procedureName(parameters)];
+
+-- 8.将表中数据插入到另一个表中
+insert into [newTableName] select * from [tableName];
+</code></pre></div><h3 id="_2-阅读本文档需要掌握的shell命令"><a href="#_2-阅读本文档需要掌握的shell命令" class="header-anchor">#</a> 2. 阅读本文档需要掌握的shell命令</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 1.使用mysql执行sql语句，将执行结果输出重定向到txt文件</span>
+mysql -u root -p -e <span class="token string">&quot;sql string&quot;</span> databaseName <span class="token operator">&gt;</span> fileName.txt 
+
+<span class="token comment"># 2.利用diff命令验证两文件内容的一致性</span>
+<span class="token function">diff</span> fileName1 fileName2
+</code></pre></div><h3 id="_2-写文档时出现并尚未解决的问题"><a href="#_2-写文档时出现并尚未解决的问题" class="header-anchor">#</a> 2. 写文档时出现并尚未解决的问题</h3> <ul><li>什么是哈希散列索引？</li> <li>什么是存储过程？</li> <li>什么是dual？</li> <li>数据和数据索引有什么区别吗？</li></ul> <hr> <p>[^3]: Stored Procedure，不知道为什么翻译成<code>存储过程</code>，翻译成“存储程序”不是更好吗？
+[^4]: <code>heap</code>是存储引擎中的一种，现已被<code>memory</code>代替，在下文创建内存表时要用到<code>engine=memory</code>语句</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a55f4e38.js" defer></script><script src="/assets/js/2.439d7bca.js" defer></script><script src="/assets/js/8.75e96568.js" defer></script>
+  </body>
+</html>
